@@ -96,11 +96,13 @@ main {
     position: relative;
     img {
       width: 30vw;
+      max-height: 100%;
     }
 
     div.orangeRect {
       width: 30vw;
       height: 90vh;
+      max-height: 100%;
       background-color: #e08958;
       position: absolute;
       top: 30px;
