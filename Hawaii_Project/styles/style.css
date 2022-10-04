@@ -138,7 +138,7 @@ main section.second section.cards div.card a {
   padding: 1.5rem 2rem;
   background-color: #1ac4c9;
   color: black;
-  border-radius: 15%;
+  border-radius: 1rem;
 }
 main footer {
   display: flex;
