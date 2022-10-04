@@ -1,0 +1,165 @@
+div.animation {
+  width: 100%;
+  height: 100vh;
+  background-color: #e08958;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*#region animation*/
+#first {
+  stroke-dasharray: 606px;
+  stroke-dashoffset: 606px;
+  -webkit-animation: fadeInside 0.6s ease-in forwards;
+          animation: fadeInside 0.6s ease-in forwards;
+}
+
+#second {
+  stroke-dasharray: 500px;
+  stroke-dashoffset: 500px;
+  -webkit-animation: fadeInside 0.6s ease-in forwards 0.3s;
+          animation: fadeInside 0.6s ease-in forwards 0.3s;
+}
+
+#third {
+  stroke-dasharray: 439px;
+  stroke-dashoffset: 439px;
+  -webkit-animation: fadeInside 0.6s ease-in forwards 0.6s;
+          animation: fadeInside 0.6s ease-in forwards 0.6s;
+}
+
+#fourth {
+  stroke-dasharray: 439px;
+  stroke-dashoffset: 439px;
+  -webkit-animation: fadeInside 0.6s ease-in forwards 0.9s;
+          animation: fadeInside 0.6s ease-in forwards 0.9s;
+}
+
+#fifth {
+  stroke-dasharray: 238px;
+  stroke-dashoffset: 238px;
+  -webkit-animation: fadeInside 0.6s ease-in forwards 1.2s;
+          animation: fadeInside 0.6s ease-in forwards 1.2s;
+}
+
+#sixth {
+  stroke-dasharray: 436px;
+  stroke-dashoffset: 436px;
+  -webkit-animation: fadeInside 0.6s ease-in forwards 1.5s;
+          animation: fadeInside 0.6s ease-in forwards 1.5s;
+}
+
+#seventh {
+  stroke-dasharray: 354px;
+  stroke-dashoffset: 354px;
+  -webkit-animation: fadeInside 0.6s ease-in forwards 1.8s;
+          animation: fadeInside 0.6s ease-in forwards 1.8s;
+}
+
+#eighth {
+  stroke-dasharray: 272px;
+  stroke-dashoffset: 272px;
+  -webkit-animation: fadeInside 0.6s ease-in forwards 2.1s;
+          animation: fadeInside 0.6s ease-in forwards 2.1s;
+}
+
+#ninth {
+  stroke-dasharray: 438px;
+  stroke-dashoffset: 438px;
+  -webkit-animation: fadeInside 0.6s ease-in forwards 2.4s;
+          animation: fadeInside 0.6s ease-in forwards 2.4s;
+}
+
+#tenth {
+  stroke-dasharray: 1863px;
+  stroke-dashoffset: 1863px;
+  -webkit-animation: fadeInside 0.6s ease-in forwards;
+          animation: fadeInside 0.6s ease-in forwards;
+}
+
+#eleventh {
+  stroke-dasharray: 1419px;
+  stroke-dashoffset: 1419px;
+  -webkit-animation: fadeInside 0.6s ease-in forwards 0.3s;
+          animation: fadeInside 0.6s ease-in forwards 0.3s;
+}
+
+#twelveth {
+  stroke-dasharray: 1061px;
+  stroke-dashoffset: 1061px;
+  -webkit-animation: fadeInside 0.6s ease-in forwards 0.6s;
+          animation: fadeInside 0.6s ease-in forwards 0.6s;
+}
+
+#thirteenth {
+  stroke-dasharray: 960px;
+  stroke-dashoffset: 960px;
+  -webkit-animation: fadeInside 0.6s ease-in forwards 0.9s;
+          animation: fadeInside 0.6s ease-in forwards 0.9s;
+}
+
+#fourteenth {
+  stroke-dasharray: 1380px;
+  stroke-dashoffset: 1380px;
+  -webkit-animation: fadeInside 0.6s ease-in forwards 1.2s;
+          animation: fadeInside 0.6s ease-in forwards 1.2s;
+}
+
+#fifteenth {
+  stroke-dasharray: 1620px;
+  stroke-dashoffset: 1620px;
+  -webkit-animation: fadeInside 0.6s ease-in forwards 1.5s;
+          animation: fadeInside 0.6s ease-in forwards 1.5s;
+}
+
+#sixteenth {
+  stroke-dasharray: 1245px;
+  stroke-dashoffset: 1245px;
+  -webkit-animation: fadeInside 0.6s ease-in forwards 1.8s;
+          animation: fadeInside 0.6s ease-in forwards 1.8s;
+}
+
+#seventeenth {
+  stroke-dasharray: 1465px;
+  stroke-dashoffset: 1465px;
+  -webkit-animation: fadeInside 0.6s ease-in forwards 2.1s;
+          animation: fadeInside 0.6s ease-in forwards 2.1s;
+}
+
+/*#endregion animation*/
+svg {
+  -webkit-animation: fillTheFont 1s ease-in forwards 2.4s;
+          animation: fillTheFont 1s ease-in forwards 2.4s;
+}
+
+@-webkit-keyframes fadeInside {
+  to {
+    stroke-dashoffset: 0px;
+  }
+}
+
+@keyframes fadeInside {
+  to {
+    stroke-dashoffset: 0px;
+  }
+}
+@-webkit-keyframes fillTheFont {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: white;
+  }
+}
+@keyframes fillTheFont {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: white;
+  }
+}/*# sourceMappingURL=animation.css.map */

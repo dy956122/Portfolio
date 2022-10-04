@@ -1,0 +1,246 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+body {
+  position: relative;
+}
+
+.orange {
+  position: absolute;
+  top: -10vh;
+  right: 0px;
+  z-index: -1;
+}
+
+header {
+  nav {
+    width: 100%;
+    ul {
+      padding: 1rem;
+      width: 70;
+      display: flex;
+      justify-content: space-around;
+      list-style-type: none;
+      li {
+        font-size: 1.75rem;
+        a {
+          text-decoration: none;
+          color: black;
+        }
+      }
+    }
+  }
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+
+  // firstPage
+  section.left {
+    flex: 3 1 500px;
+    padding: 2rem;
+
+    h1 {
+      font-size: 3rem;
+      color: #e08958;
+    }
+
+    p {
+      font-size: 1.5rem;
+      padding: 1rem 0rem;
+    }
+  }
+
+  section.right {
+    flex: 1 1 600px;
+    position: relative;
+    img {
+      border-radius: 50%;
+      width: 20vw;
+      height: 25vw;
+      position: absolute;
+      top: 30vh;
+      right: 25vw;
+    }
+  }
+
+  // secondPage
+  section.table {
+    flex: 3 1 500px;
+    padding: 2rem;
+    table {
+      border-collapse: collapse;
+      tr {
+        border-bottom: 2px solid gray;
+        transition: all 0.2s ease;
+        td {
+          padding: 1rem;
+          img {
+            margin: 0rem 0.5rem;
+          }
+        }
+        &:hover {
+          background-color: #ffc19e;
+        }
+      }
+    }
+  }
+
+  section.myPicture {
+    flex: 1 1 600px;
+    position: relative;
+    img {
+      width: 30vw;
+    }
+
+    div.orangeRect {
+      width: 30vw;
+      height: 90vh;
+      background-color: #e08958;
+      position: absolute;
+      top: 30px;
+      right: 150px;
+      z-index: -1;
+    }
+  }
+
+  // ThirdPage
+  section.form {
+    flex: 1 1 500px;
+    form {
+      min-height: 70vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      // align-items: center;
+      padding: 1.5rem;
+      div {
+        margin: 0.5rem;
+        label {
+          font-size: 1.5rem;
+          margin-right: 1rem;
+        }
+        input,
+        textarea {
+          background-color: #ffa26c;
+          color: white;
+          border: none;
+          font-size: 1.25rem;
+          padding: 0.5rem 0.25rem;
+          width: 90%;
+        }
+        textarea {
+          vertical-align: top;
+        }
+      }
+      button {
+        align-self: center;
+        background-color: #e08958;
+        color: white;
+        font-size: 2rem;
+        border: none;
+        cursor: pointer;
+        padding: 0.75rem 1.5rem;
+        border-radius: 10px;
+      }
+    }
+  }
+
+  div.divideLine {
+    background-color: gray;
+    width: 3px;
+  }
+
+  section.contact {
+    flex: 1 1 500px;
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    div.content {
+      h2 {
+        font-size: 1.5rem;
+        margin: 0.5rem;
+      }
+    }
+  }
+}
+
+footer {
+  a {
+    padding: 1rem;
+  }
+}
+
+.active {
+  color: #e08958;
+}
+
+@media screen and (max-width: 1100px) {
+  .orange {
+    opacity: 0.5;
+  }
+
+  header {
+    nav {
+      ul {
+        width: 100%;
+        flex-direction: column;
+        li {
+          padding: 1rem 0rem;
+          border-bottom: 2px solid gray;
+        }
+      }
+    }
+  }
+
+  main {
+    section.right {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 1rem;
+      img {
+        position: static;
+        transform: none;
+        width: 40vw;
+        height: 50vw;
+      }
+    }
+
+    section.myPicture {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 2.5rem;
+      img {
+        width: 60vw;
+      }
+      div.orangeRect {
+        display: none;
+      }
+    }
+  }
+
+  footer {
+    a {
+      align-items: center;
+      img {
+        width: 20vw;
+        height: 20vw;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  main {
+    div.divideLine {
+      width: 2px;
+    }
+  }
+}
