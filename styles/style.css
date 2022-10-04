@@ -21,7 +21,7 @@ header nav {
 }
 header nav ul {
   padding: 1rem;
-  width: 70;
+  width: 70%;
   display: flex;
   justify-content: space-around;
   list-style-type: none;
@@ -196,16 +196,31 @@ footer a {
   main section.myPicture div.orangeRect {
     display: none;
   }
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   footer a {
+    justify-content: center;
     align-items: center;
   }
   footer a img {
-    width: 20vw;
-    height: 20vw;
+    width: 10vw;
+    height: 10vw;
   }
 }
 @media screen and (max-width: 600px) {
   main div.divideLine {
     width: 2px;
+  }
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  footer a img {
+    width: 10vw;
+    height: 10vw;
   }
 }/*# sourceMappingURL=style.css.map */
