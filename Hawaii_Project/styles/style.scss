@@ -192,7 +192,7 @@ main {
         flex-wrap: wrap;
         list-style-type: none;
         justify-content: space-around;
-        text-align: center; //影片中沒有增加這段，所以會導致字會歪掉
+        text-align: center;
         li {
           flex-basis: 100px;
           a {
@@ -209,8 +209,8 @@ main {
       a {
         margin: 0rem 1rem;
         img {
-          width: 5vw;
-          height: 5vw;
+          width: 3vw;
+          height: 3vw;
         }
       }
     }
